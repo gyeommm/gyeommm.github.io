@@ -5,14 +5,23 @@
 	</head>
 	<body><h1>YEAH SANDWICHES</h1>
 		<p>I like eggs.</p>
-		<p>And ham!!!~~-</p>
+		<p>And ham!!!~~44-</p>
 		<p><input type="file" accept="image/*" capture="camera"/></p>
 		<p>
-			<input type="button" id="ow" value="Open Window" />
+			<input type="button" id="opf" value="Open PDF file" />
+			<script type="text/javascript">
+				var opf = document.getElementById('opf');
+				opf.addEventListener('click', function() {
+					window.open("https://m.hanacard.co.kr/leaflet/13/13455_UNION_20220105.pdf", "_blank");
+				})
+			</script>
+		</p>
+		<p>
+			<input type="button" id="ow" value="Open new window" />
 			<script type="text/javascript">
 				var ow = document.getElementById('ow');
 				ow.addEventListener('click', function() {
-					window.open("https://m.hanacard.co.kr/leaflet/13/13455_UNION_20220105.pdf", "_blank");
+					window.open("https://www.naver.com", "_blank");
 				})
 			</script>
 		</p>
