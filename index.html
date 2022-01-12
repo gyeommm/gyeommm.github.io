@@ -25,6 +25,15 @@
 				})
 			</script>
 		</p>
+		<p>
+			<input type="button" id="st" value="send token" />
+			<script type="text/javascript">
+				var st = document.getElementById('st');
+				st.addEventListener('click', function() {
+					window.ChaiAndroidHandler.postAction('', 'setPlccStatus', '{"hanaToken":"hana_token","chaiToken":"chai_token"}');
+				})
+			</script>
+		</p>
 			
 		<p>But mostly sandwiches.</p>
 	</body>
