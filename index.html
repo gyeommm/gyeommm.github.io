@@ -26,11 +26,20 @@
 			</script>
 		</p>
 		<p>
-			<input type="button" id="st" value="send token" />
+			<input type="button" id="sta" value="send token (Android)" />
 			<script type="text/javascript">
-				var st = document.getElementById('st');
-				st.addEventListener('click', function() {
+				var sta = document.getElementById('sta');
+				sta.addEventListener('click', function() {
 					window.ChaiAndroidHandler.postAction('', 'setPlccStatus', '{"hanaToken":"hana_token_drake","chaiToken":"chai_token_drake"}');
+				})
+			</script>
+		</p>
+		<p>
+			<input type="button" id="sti" value="send token (iOS)" />
+			<script type="text/javascript">
+				var sti = document.getElementById('sti');
+				sti.addEventListener('click', function() {
+					window.ChaiiOSHandler.postAction('', 'setPlccStatus', '{"hanaToken":"hana_token_jesse","chaiToken":"chai_token_jesse"}');
 				})
 			</script>
 		</p>
