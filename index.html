@@ -26,11 +26,11 @@
 			</script>
 		</p>
 		<p>
-			<input type="button" id="sta" value="send token (Android v2)" />
+			<input type="button" id="sta" value="send token (Android v3)" />
 			<script type="text/javascript">
 				var sta = document.getElementById('sta');
 				sta.addEventListener('click', function() {
-					window.ChaiAndroidHandler.postAction('', 'setPlccStatus', '{"hanaToken":"test_hana_token","chaiToken":"2259a127-334d-4fbd-9e9e-ce6b843a0db2"}');
+					window.ChaiAndroidHandler.postAction('', 'setPlccStatus', '{"hanaToken":"test_hana_token","chaiToken":"2259a127-334d-4fbd-9e9e-ce6b843a0db2","status":"canceled"}');
 				})
 			</script>
 		</p>
